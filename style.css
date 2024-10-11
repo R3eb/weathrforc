@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/assestss/iso-republic-puffy-clouds.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  font-size: large;
+}
+
+.box {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 350px;
+  color: white;
+}
+
+.box h1 {
+  font-size: 3.8vh;
+  background: linear-gradient(
+    to right,
+    #7953cd 20%,
+    #00affa 30%,
+    #0190cd 70%,
+    #764ada 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animated 3s ease-in-out infinite alternate;
+  background-size: 500% auto;
+}
+
+@keyframes animated {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid #ccc;
+  color: lightgray;
+  font-size: 16px;
+  border-radius: 20px 0px 0px 20px;
+  outline: none;
+}
+
+.search-bar::placeholder {
+  color: lightgray;
+  font-style: italic;
+}
+
+button.search-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #555;
+  border: 1px solid #ccc;
+  border-radius: 0px 20px 20px 0px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button.search-btn:hover {
+  background-color: #777;
+}
+
+button.search-btn:focus {
+  outline: none;
+}
+
+button.search-btn img {
+  width: 20px;
+  height: auto;
+}
+
+.weather {
+  margin-top: 20px;
+  color: lightgray;
+  text-align: center;
+}
+
+.weather p {
+  margin-bottom: 10px;
+}
+
+#icon {
+  width: 80px;
+  height: auto;
+  margin-top: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  color: #ddd;
+}
+
+
+
