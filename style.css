@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url(assestss/iso-republic-puffy-clouds.jpg);
+  background-image: url('assestss/iso-republic-puffy-clouds.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
