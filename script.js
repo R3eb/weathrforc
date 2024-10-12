@@ -13,12 +13,13 @@ function getWeather(city) {
             const windSpeed = data.wind.speed;
             const icon = data.weather[0].icon;
 
-            document.getElementById("city-name").textContent = `${cityName}, ${country}`;
+            document.getElementById("city-name").textContent = `${cityName}`;
             document.getElementById("description").textContent = `Weather: ${description}`;
-            document.getElementById("temperature").textContent = `Temperature: ${temp}°C`;
-            document.getElementById("feels-like").textContent = `Feels like: ${feels_like}°C`;
-            document.getElementById("humidity").textContent = `Humidity: ${humidity}%`;
-            document.getElementById("wind-speed").textContent = `Wind Speed: ${windSpeed} m/s`;
+            document.getElementById("temperature").textContent = ` ${temp}°C`;
+            // document.getElementById("feels-like").textContent = `Feels like: ${feels_like}°C`;
+            // document.getElementById("humidity").textContent = `Humidity: ${humidity}%`;
+            document.getElementById("wind-speed").textContent = ` ${windSpeed} m/s`;
+            document.getElementById("icon").src = `http://openweathermap.org/img/wn/${icon}.png`;
 
             console.log(`Weather data for ${cityName}, ${country}: Temp: ${temp}°C, Feels Like: ${feels_like}°C`);
         })
